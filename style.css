@@ -93,3 +93,12 @@ ul li a:hover {
 #social-links ion-icon:hover {
   border: 16px solid rgba(255, 255, 255, 0.2);
 }
+
+footer {
+  text-align: center;
+  padding: 24px;
+}
+
+footer p {
+  font-size: 14px;
+}
