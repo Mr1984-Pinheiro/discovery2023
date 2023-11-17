@@ -7,11 +7,19 @@
 :root {
   --text-color: #ffffff;
   --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --highlight-color: rgba(255, 255, 255, 0.2);
 }
 
 .light {
   --bg-url: url(./assets/bg-mobile-light.jpg);
   --text-color: #000000;
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -49,8 +57,8 @@ ul li a {
   padding: 16px 24px;
 
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--stroke-color);
+  background: var(--surface-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   text-decoration: none;
@@ -62,7 +70,7 @@ ul li a {
 
 ul li a:hover {
   border: 1.5px solid var(--text-color);
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--surface-color-hover);
 }
 
 #profile {
@@ -101,7 +109,7 @@ ul li a:hover {
 }
 
 #social-links ion-icon:hover {
-  border: 16px solid rgba(255, 255, 255, 0.2);
+  border: 16px solid var(--highlight-color);
 }
 
 footer {
